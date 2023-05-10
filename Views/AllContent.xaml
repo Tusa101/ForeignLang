@@ -1,0 +1,27 @@
+﻿<Page x:Class="ForeignLang.Views.AllContent"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ForeignLang.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AllContent">
+
+    <Grid Background="#E0E5EC">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.Column="1" Grid.Row="1" Name="_dataGrid" ItemsSource="{Binding Data}" MinColumnWidth="210" FontFamily="Ermilov" 
+                  FontSize="14" CanUserResizeColumns="False" CanUserResizeRows="False">
+            
+        </DataGrid>
+    </Grid>
+</Page>

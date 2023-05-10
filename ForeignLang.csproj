@@ -234,8 +234,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\DbData.cs" />
+    <Compile Include="ViewModels\AllDataVM.cs" />
     <Compile Include="ViewModels\CardVM.cs" />
     <Compile Include="ViewModels\ThemeVMS.cs" />
+    <Compile Include="Views\AllContent.xaml.cs">
+      <DependentUpon>AllContent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\StartupPage.xaml.cs">
       <DependentUpon>StartupPage.xaml</DependentUpon>
     </Compile>
@@ -245,6 +249,10 @@
     <Compile Include="Views\ThemesPage.xaml.cs">
       <DependentUpon>ThemesPage.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\AllContent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

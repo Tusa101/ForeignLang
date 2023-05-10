@@ -37,5 +37,10 @@ namespace ForeignLang
             string buttonContent = (sender as Button).Content.ToString();
             NavigationService.Navigate(new ThemeLearning(buttonContent));
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AllContent());
+        }
     }
 }

@@ -132,7 +132,7 @@ namespace ForeignLang.Models
 
             Cards.Rows.Add(new object[] { null, "Sewing", "Вязание", "Hobbies" });
             Cards.Rows.Add(new object[] { null, "Ping-pong", "Настольный теннис", "Hobbies" });
-
+            Cards.Rows.Add(new object[] { null, "Swimming", "Плавание", "Hobbies" });
         }
     }
 }
