@@ -57,6 +57,7 @@ namespace ForeignLang.Views
             {
                 
                 Correct.Visibility = Visibility.Visible;
+                Input.Text = "";
             }
             else
             {
@@ -113,6 +114,22 @@ namespace ForeignLang.Views
                 synthesizer.SpeakAsync(CardAns.Content.ToString());
             }
             
+        }
+
+        private void Page_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter ) 
+            {
+                if (Input.Text != "")
+                {
+                    Card.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+                }
+                else
+                {
+                    CardAns.RaiseEvent(new RoutedEventArgs(Button.ClickEvent));
+                }
+                
+            }
         }
     }
 }
