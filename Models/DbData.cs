@@ -14,6 +14,7 @@ namespace ForeignLang.Models
         public DataSet ThemesSet { get; set; }
         public DataTable Cards { get; set; }
         public DataTable Themes { get; set; }
+        public DataTable CompletedThemes { get; set; }
 
         public DbData()
         {
@@ -133,6 +134,19 @@ namespace ForeignLang.Models
             Cards.Rows.Add(new object[] { null, "Sewing", "Вязание", "Hobbies" });
             Cards.Rows.Add(new object[] { null, "Ping-pong", "Настольный теннис", "Hobbies" });
             Cards.Rows.Add(new object[] { null, "Swimming", "Плавание", "Hobbies" });
+
+
+
+
+            CompletedThemes = new DataTable("CompletedThemes");
+            
+            DataColumn themeColumn = new DataColumn("Theme", Type.GetType("System.String"));
+
+            idCol.Unique = true;
+            
+
+            DataColumn completionCol = new DataColumn("Completion", Type.GetType("System.Int64"));
+
         }
     }
 }

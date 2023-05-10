@@ -51,14 +51,25 @@ namespace ForeignLang.Views
             Storyboard.SetTargetName(anim2, CardAns.Name);
             sbFlip.Children.Add(anim2);
             sbFlip.Begin(this);
-
+            
+            
+            if (Input.Text == CardAnsTxt.Text)
+            {
+                
+                Correct.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                Mistake.Visibility = Visibility.Visible;
+            }
             
 
         }
 
         private async void CardAns_Click(object sender, RoutedEventArgs e)
         {
-            
+            Mistake.Visibility = Visibility.Hidden;
+            Correct.Visibility = Visibility.Hidden;
             Card.RenderTransformOrigin = new Point(0.5, 0.5);
             CardAns.RenderTransformOrigin = new Point(0.5, 0.5);
             Storyboard sbFlip = new Storyboard();

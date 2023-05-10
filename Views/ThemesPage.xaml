@@ -32,7 +32,7 @@
                         <BeginStoryboard>
                             <Storyboard>
                                 <ThicknessAnimation Storyboard.TargetProperty="Margin" From="5" To="0" Duration="0:0:0.3"/>
-                                <DoubleAnimation From="12" To="14" Storyboard.TargetProperty="FontSize" Duration="0:0:0.3"/>
+                                <DoubleAnimation From="20" To="25" Storyboard.TargetProperty="FontSize" Duration="0:0:0.3"/>
                             </Storyboard>
                         </BeginStoryboard>
                     </Trigger.EnterActions>
@@ -40,7 +40,7 @@
                         <BeginStoryboard>
                             <Storyboard>
                                 <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0" To="5" Duration="0:0:0.3"/>
-                                <DoubleAnimation From="14" To="12" Storyboard.TargetProperty="FontSize" Duration="0:0:0.3"/>
+                                <DoubleAnimation From="25" To="20" Storyboard.TargetProperty="FontSize" Duration="0:0:0.3"/>
                             </Storyboard>
                         </BeginStoryboard>
                     </Trigger.ExitActions>
@@ -62,7 +62,7 @@
                     <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
                 <Button Style="{StaticResource CustomButton}" Content="All words" Click="Button_Click_1"
-                        FontSize="12" FontFamily="Ermilov" Grid.Column="1" />
+                        FontSize="20" FontFamily="Ermilov" Grid.Column="1" />
             </Grid>
         </UniformGrid>
         <Grid Grid.Row="0">
@@ -77,6 +77,8 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
+            <Label Content="Choose the theme" Grid.Row="0" Grid.Column="1" FontSize="25" FontFamily="Ermilov"
+                   HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Grid Grid.Row="1" Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -91,39 +93,39 @@
 
                 <Grid Grid.Row="0" Grid.Column="0" Background="#E0E5EC">
                     <Button Style="{StaticResource CustomButton}" Content="{Binding ThemeFirst}" Click="Button_Click"
-                            FontSize="12" FontFamily="Ermilov"/>
+                            FontSize="20" FontFamily="Ermilov"/>
                 </Grid>
                 <Grid Grid.Row="0" Grid.Column="1" Background="#E0E5EC">
                     <Button Style="{StaticResource CustomButton}" Content="{Binding ThemeSecond}" Click="Button_Click"
-                            FontSize="12" FontFamily="Ermilov"/>
+                            FontSize="20" FontFamily="Ermilov"/>
                 </Grid>
                 <Grid Grid.Row="0" Grid.Column="2" Background="#E0E5EC">
                     <Button Style="{StaticResource CustomButton}" Content="{Binding ThemeThird}" Click="Button_Click"
-                            FontSize="12" FontFamily="Ermilov"/>
+                            FontSize="20" FontFamily="Ermilov"/>
                 </Grid>
                 <Grid Grid.Row="1" Grid.Column="0" Background="#E0E5EC">
                     <Button Style="{StaticResource CustomButton}" Content="{Binding ThemeFourth}" Click="Button_Click"
-                            FontSize="12" FontFamily="Ermilov"/>
+                            FontSize="20" FontFamily="Ermilov"/>
                 </Grid>
                 <Grid Grid.Row="1" Grid.Column="1" Background="#E0E5EC">
                     <Button Style="{StaticResource CustomButton}" Content="{Binding ThemeFifth}" Click="Button_Click"
-                            FontSize="12" FontFamily="Ermilov"/>
+                            FontSize="20" FontFamily="Ermilov"/>
                 </Grid>
                 <Grid Grid.Row="1" Grid.Column="2" Background="#E0E5EC">
                     <Button Style="{StaticResource CustomButton}" Content="{Binding ThemeSixth}" Click="Button_Click"
-                            FontSize="12" FontFamily="Ermilov"/>
+                            FontSize="20" FontFamily="Ermilov"/>
                 </Grid>
                 <Grid Grid.Row="2" Grid.Column="0" Background="#E0E5EC">
                     <Button Style="{StaticResource CustomButton}" Content="{Binding ThemeSeven}" Click="Button_Click"
-                            FontSize="12" FontFamily="Ermilov"/>
+                            FontSize="20" FontFamily="Ermilov"/>
                 </Grid>
                 <Grid Grid.Row="2" Grid.Column="1" Background="#E0E5EC">
                     <Button Style="{StaticResource CustomButton}" Content="{Binding ThemeEighth}" Click="Button_Click"
-                            FontSize="12" FontFamily="Ermilov"/>
+                            FontSize="20" FontFamily="Ermilov"/>
                 </Grid>
                 <Grid Grid.Row="2" Grid.Column="2" Background="#E0E5EC">
                     <Button Style="{StaticResource CustomButton}" Content="{Binding ThemeNineth}" Click="Button_Click"
-                            FontSize="12" FontFamily="Ermilov"/>
+                            FontSize="20" FontFamily="Ermilov"/>
                 </Grid>
             </Grid>
         </Grid>
